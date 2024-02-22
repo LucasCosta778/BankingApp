@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.Domain", "BankingApp.Domain\BankingApp.Domain.csproj", "{A564A691-F541-429F-B847-8FC84F91CBD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.Shared", "BankingApp.Shared\BankingApp.Shared.csproj", "{A14F58CA-84EB-4868-8BC9-4E3AEE953CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.Test", "BankingApp.Test\BankingApp.Test.csproj", "{6CBADFBD-5175-4397-BD19-4727F51DD07F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A564A691-F541-429F-B847-8FC84F91CBD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A564A691-F541-429F-B847-8FC84F91CBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A564A691-F541-429F-B847-8FC84F91CBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A564A691-F541-429F-B847-8FC84F91CBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A14F58CA-84EB-4868-8BC9-4E3AEE953CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14F58CA-84EB-4868-8BC9-4E3AEE953CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14F58CA-84EB-4868-8BC9-4E3AEE953CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14F58CA-84EB-4868-8BC9-4E3AEE953CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBADFBD-5175-4397-BD19-4727F51DD07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBADFBD-5175-4397-BD19-4727F51DD07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBADFBD-5175-4397-BD19-4727F51DD07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBADFBD-5175-4397-BD19-4727F51DD07F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

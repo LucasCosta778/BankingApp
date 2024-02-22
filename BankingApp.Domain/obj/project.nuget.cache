@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SMbSwQ4NBzWEsGXadxUyNm8TMzJjZJuBPAqZXw8Nq3SMeC22zYVpFdDPbw/MjW+8Sr7/4yk5ezYTU3bVfJmCCw==",
+  "success": true,
+  "projectFilePath": "C:\\BankingApp\\BankingApp.Domain\\BankingApp.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dev4lions1\\.nuget\\packages\\flunt\\2.0.0\\flunt.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

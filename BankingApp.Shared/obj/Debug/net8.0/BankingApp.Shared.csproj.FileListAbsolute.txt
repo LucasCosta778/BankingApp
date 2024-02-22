@@ -1,0 +1,11 @@
+C:\BankingApp\BankingApp.Shared\bin\Debug\net8.0\BankingApp.Shared.deps.json
+C:\BankingApp\BankingApp.Shared\bin\Debug\net8.0\BankingApp.Shared.dll
+C:\BankingApp\BankingApp.Shared\bin\Debug\net8.0\BankingApp.Shared.pdb
+C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\BankingApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\BankingApp.Shared.AssemblyInfoInputs.cache
+C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\BankingApp.Shared.AssemblyInfo.cs
+C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\BankingApp.Shared.csproj.CoreCompileInputs.cache
+C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\BankingApp.Shared.dll
+C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\refint\BankingApp.Shared.dll
+C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\BankingApp.Shared.pdb
+C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\ref\BankingApp.Shared.dll
