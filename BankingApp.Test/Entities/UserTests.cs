@@ -1,4 +1,5 @@
 using BankingApp.Domain.Entities;
+using BankingApp.Domain.ValueObjects;
 
 namespace BankingApp.Test;
 
@@ -8,6 +9,9 @@ public class UserTests
     [TestMethod]
     public void TestMethod1()
     {
-        var user = new User(1, "Lucas", "lucas@gmail.com", "1234", "45555555", Domain.Enums.EUserType.comum);
+        var cpf = new CPF("765.150.300");
+
+        
+        Console.WriteLine(cpf);
     }
 }
