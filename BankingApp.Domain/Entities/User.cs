@@ -1,18 +1,21 @@
 
+using System.Security.Cryptography.X509Certificates;
 using BankingApp.Domain.Enums;
 using BankingApp.Domain.ValueObjects;
+using BankingApp.Shared.Entities;
 
 namespace BankingApp.Domain.Entities
 {
-    public class User
+    public class User : Entity
     {
-        public User(int id, Name name, Email email, string senha, CPF cpf, EUserType tipo)
+        public User(int id, Name name, Email email, string senha, CPF cpf, decimal saldo, EUserType tipo)
         {
             Id = id;
             Name = name;
             Email = email;
             Senha = senha;
             Cpf = cpf;
+            Saldo = saldo;
             Tipo = tipo;
         }
 
@@ -21,6 +24,9 @@ namespace BankingApp.Domain.Entities
         public Email Email { get; private set; }
         public string Senha { get; private set; }
         public CPF Cpf { get; private set; }
+        public decimal Saldo { get; set; }
         public EUserType Tipo { get; private set; }
+
+       
     }
 }

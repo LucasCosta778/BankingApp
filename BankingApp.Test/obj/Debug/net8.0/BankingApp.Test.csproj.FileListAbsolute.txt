@@ -114,3 +114,5 @@ C:\BankingApp\BankingApp.Test\obj\Debug\net8.0\refint\BankingApp.Test.dll
 C:\BankingApp\BankingApp.Test\obj\Debug\net8.0\BankingApp.Test.pdb
 C:\BankingApp\BankingApp.Test\obj\Debug\net8.0\BankingApp.Test.genruntimeconfig.cache
 C:\BankingApp\BankingApp.Test\obj\Debug\net8.0\ref\BankingApp.Test.dll
+C:\BankingApp\BankingApp.Test\bin\Debug\net8.0\Flunt.dll
+C:\BankingApp\BankingApp.Test\obj\Debug\net8.0\BankingApp.Test.sourcelink.json

@@ -13,3 +13,4 @@ C:\BankingApp\BankingApp.Domain\obj\Debug\net8.0\BankingApp.Domain.dll
 C:\BankingApp\BankingApp.Domain\obj\Debug\net8.0\refint\BankingApp.Domain.dll
 C:\BankingApp\BankingApp.Domain\obj\Debug\net8.0\BankingApp.Domain.pdb
 C:\BankingApp\BankingApp.Domain\obj\Debug\net8.0\ref\BankingApp.Domain.dll
+C:\BankingApp\BankingApp.Domain\obj\Debug\net8.0\BankingApp.Domain.sourcelink.json

@@ -1,0 +1,31 @@
+using BankingApp.Domain.Commands;
+using BankingApp.Domain.Repositories;
+using BankingApp.Shared.Commands;
+using BankingApp.Shared.Handlers;
+using Flunt.Notifications;
+
+namespace BankingApp.Domain.Handlers
+{
+    public class TransferHandle : Notifiable<Notification>, IHandler<CreateTransferCommand>
+    {
+        private readonly ITransferRepository _repository;
+        public TransferHandle(ITransferRepository repository)
+        {
+            _repository = repository;
+        }
+        public ICommandResult Handle(CreateTransferCommand command)
+        {
+            //verificar se destinatário existe
+            if (_repository.recipientExist(command.Destinatario))
+                AddNotification("Transfer.Destinatario", "Destinatario não existe!");
+
+            //gerar entidade
+
+            //salvar informações
+
+            return new CommandResult(true, "Transferência realizada com sucesso!");
+
+        }
+    }
+
+}

@@ -7,15 +7,18 @@ namespace BankingApp.Domain.ValueObjects
     {
         public CPF(string cpf)
         {
-            Cpf = cpf;
-
-            if (!ValidarCPF(Cpf))
+            if (!ValidarCPF(cpf))
             {
                 AddNotification("CPF", "CPF inválido");
+            }
+            else
+            {
+                Cpf = cpf;
             }
         }
 
         public string Cpf { get; private set; }
+
         static bool ValidarCPF(string cpf)
         {
             // Remover caracteres não numéricos
@@ -50,4 +53,4 @@ namespace BankingApp.Domain.ValueObjects
             return (digito1 == int.Parse(cpf[9].ToString()) && digito2 == int.Parse(cpf[10].ToString()));
         }
     }
- }
+}

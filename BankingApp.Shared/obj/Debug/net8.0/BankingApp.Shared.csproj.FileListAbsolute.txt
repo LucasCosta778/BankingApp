@@ -9,3 +9,5 @@ C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\BankingApp.Shared.dll
 C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\refint\BankingApp.Shared.dll
 C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\BankingApp.Shared.pdb
 C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\ref\BankingApp.Shared.dll
+C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\BankingApp.Shared.csproj.AssemblyReference.cache
+C:\BankingApp\BankingApp.Shared\obj\Debug\net8.0\BankingApp.Shared.sourcelink.json

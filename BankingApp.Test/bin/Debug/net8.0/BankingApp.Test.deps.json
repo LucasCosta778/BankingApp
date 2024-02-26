@@ -10,6 +10,7 @@
         "dependencies": {
           "BankingApp.Domain": "1.0.0",
           "BankingApp.Shared": "1.0.0",
+          "Flunt": "2.0.0",
           "MSTest.TestAdapter": "3.0.4",
           "MSTest.TestFramework": "3.0.4",
           "Microsoft.NET.Test.Sdk": "17.6.0",
@@ -21,6 +22,14 @@
         }
       },
       "coverlet.collector/6.0.0": {},
+      "Flunt/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.6.0": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -351,13 +360,17 @@
       "System.Reflection.Metadata/1.6.0": {},
       "BankingApp.Domain/1.0.0": {
         "dependencies": {
-          "BankingApp.Shared": "1.0.0"
+          "BankingApp.Shared": "1.0.0",
+          "Flunt": "2.0.0"
         },
         "runtime": {
           "BankingApp.Domain.dll": {}
         }
       },
       "BankingApp.Shared/1.0.0": {
+        "dependencies": {
+          "Flunt": "2.0.0"
+        },
         "runtime": {
           "BankingApp.Shared.dll": {}
         }
@@ -384,6 +397,13 @@
       "sha512": "sha512-tW3lsNS+dAEII6YGUX/VMoJjBS1QvsxqJeqLaJXub08y1FSjasFPtQ4UBUsudE9PNrzLjooClMsPtY2cZLdXpQ==",
       "path": "coverlet.collector/6.0.0",
       "hashPath": "coverlet.collector.6.0.0.nupkg.sha512"
+    },
+    "Flunt/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AMp1iY9nvkktxfYEbwDjQA2wn7WmI9voNFS7Aikt2b5Gl4VTwqRUoREf4+64DxiT/xXxMyFEHfrRhhDPydUJFQ==",
+      "path": "flunt/2.0.0",
+      "hashPath": "flunt.2.0.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.6.0": {
       "type": "package",
