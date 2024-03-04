@@ -1,4 +1,5 @@
 using BankingApp.Domain.Commands;
+using BankingApp.Domain.Entities;
 using BankingApp.Domain.Repositories;
 using BankingApp.Shared.Commands;
 using BankingApp.Shared.Handlers;
@@ -20,9 +21,10 @@ namespace BankingApp.Domain.Handlers
                 AddNotification("Transfer.Destinatario", "Destinatario não existe!");
 
             //gerar entidade
-
+            var transfer = new Transfer(command.Remetente, command.Destinatario, command.ValorTransferencia);
             //salvar informações
-
+            _repository.CreateTransfer(transfer);
+            
             return new CommandResult(true, "Transferência realizada com sucesso!");
 
         }
