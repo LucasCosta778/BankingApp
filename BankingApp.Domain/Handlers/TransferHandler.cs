@@ -17,12 +17,16 @@ namespace BankingApp.Domain.Handlers
         public ICommandResult Handle(CreateTransferCommand command)
         {
             //verificar se destinatário existe
-            if (_repository.recipientExist(command.Destinatario))
-                AddNotification("Transfer.Destinatario", "Destinatario não existe!");
+            if (_repository.DestinatarioExiste(command.Destinatario))
+                  throw new Exception("Destinatário inválido!");
+            //Verificar se o remetente existe
+            if (_repository.RemetenteExiste(command.Destinatario))
+                  throw new Exception("Remetente inválido!");
 
-            //gerar entidade
+
+            //Gerar entidade
             var transfer = new Transfer(command.Remetente, command.Destinatario, command.ValorTransferencia);
-            //salvar informações
+            //Salvar informações no banco
             _repository.CreateTransfer(transfer);
             
             return new CommandResult(true, "Transferência realizada com sucesso!");

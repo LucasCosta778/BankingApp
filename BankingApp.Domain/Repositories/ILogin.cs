@@ -4,6 +4,6 @@ namespace BankingApp.Domain.Repositories
 {
     public interface ILogin
     {
-        public void CheckEmailAndSenhaIsSameUser();
+        public bool CheckEmailAndSenhaIsSameUser();
     }
 }

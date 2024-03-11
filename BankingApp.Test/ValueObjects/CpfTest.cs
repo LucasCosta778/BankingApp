@@ -9,7 +9,7 @@ namespace BankingApp.Test.ValueObject
         [TestMethod]
         public void ShouldReturnSucessWhenCpfValid()
         {
-            string testcpf = "123.427.280-69";
+            string testcpf = "935.555.070-79";
 
             var cpf = new CPF(testcpf);
 
@@ -17,15 +17,14 @@ namespace BankingApp.Test.ValueObject
 
         }
 
+
         [TestMethod]
-        public void ShouldReturnErrorWhenCpfInvalid()
+        public void testInvalidCpf()
         {
             string testcpf = "155-220-155";
 
-            var cpf = new CPF(testcpf);
-
-            Assert.AreNotEqual(testcpf, cpf.Cpf);
-
+            Assert.ThrowsException<Exception>(() => new CPF(testcpf));
         }
+
     }
 }

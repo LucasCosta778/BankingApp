@@ -20,11 +20,11 @@ namespace BankingApp.Domain.Handlers
         {
             //Verificar se cpf já está cadastrado
             if (_repository.CpfExist(command.Cpf))
-                AddNotification("CPF", "Esse cpf já existe!");
+                throw new Exception("CPF inválido!");
 
             //verificar se email já está cadastrado
             if (_repository.EmailExist(command.Email))
-                AddNotification("Email", "Esse email já existe!");
+                throw new Exception("Email não existe!");
 
             //Gerar value objects para usuário
             var name = new Name(command.FirstName, command.LastName);

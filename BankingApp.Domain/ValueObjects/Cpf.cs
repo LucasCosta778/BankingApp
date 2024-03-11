@@ -9,7 +9,7 @@ namespace BankingApp.Domain.ValueObjects
         {
             if (!ValidarCPF(cpf))
             {
-                AddNotification("CPF", "CPF inválido");
+                throw new Exception("CPF inválido!");
             }
             else
             {
@@ -19,7 +19,7 @@ namespace BankingApp.Domain.ValueObjects
 
         public string Cpf { get; private set; }
 
-        static bool ValidarCPF(string cpf)
+        private bool ValidarCPF(string cpf)
         {
             // Remover caracteres não numéricos
             cpf = Regex.Replace(cpf, "[^0-9]", "");

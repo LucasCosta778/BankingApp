@@ -30,17 +30,19 @@ namespace BankingApp.Domain.Entities
         {
             if (remetente.Tipo == Enums.EUserType.lojista)
             {
-                AddNotification("User.Tipo", "Você não pode realizar transferências");
+                throw new Exception("Você não pode realizar transferências");
             }
 
             if (remetente == destinatario)
             {
-                AddNotification("User.Id", "Você não pode enviar para si mesmo!");
+                 throw new Exception("Você não pode realizar transferências para si mesmo!");
+
             }
 
             if (remetente.Saldo < valorTransferencia || valorTransferencia == 0)
             {
-                AddNotification("User.Saldo", "Valor de transferência inválido");
+                 throw new Exception("Saldo insuficiente!");
+
             }
 
         }

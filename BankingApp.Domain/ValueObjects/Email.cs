@@ -1,5 +1,7 @@
 using BankingApp.Shared.ValueObjects;
 using Flunt.Validations;
+using System.Net.Mail;
+using System.Text.RegularExpressions;
 
 namespace BankingApp.Domain.ValueObjects
 {
@@ -7,19 +9,24 @@ namespace BankingApp.Domain.ValueObjects
     {
         public Email(string address)
         {
-            AddNotifications(new EmailContract(address));
+            if (!IsValidEmail(address))
+            {
+                throw new ArgumentException("Endereço de e-mail inválido", nameof(address));
+            }
             Address = address;
         }
 
         public string Address { get; private set; }
-    }
 
-    public class EmailContract : Contract<Email>
-    {
-        public EmailContract(string address)
-        {
-            Requires().IsEmail(address, "Email");
+      private bool IsValidEmail(string email)
+         {
+             // Expressão regular para validar o formato do endereço de e-mail
+            string emailRegex = @"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$";
+            Regex regex = new Regex(emailRegex);
 
+            return regex.IsMatch(email);
         }
     }
+
+
 }
