@@ -6,10 +6,11 @@ namespace BankingApp.Domain.Repositories
 {
     public interface ITransferRepository
     {
-        
-        bool RemetenteExiste(User remetente);
+        void OpenConnection();
+        void CloseConnection();
+        bool CPFjaExiste(User remetente);
         bool DestinatarioExiste(User destinatario);
-        void CreateTransfer(Transfer transfer);
+        void CriarTransferencia(Transfer transfer);
 
     }
 }

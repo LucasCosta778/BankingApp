@@ -8,9 +8,9 @@ namespace BankingApp.Domain.Entities
 {
     public class User : Entity
     {
-        public User(int id, Name nome, Email email, string senha, CPF cpf, decimal saldo, EUserType tipo)
+        public User(Name nome, Email email, string senha, CPF cpf, decimal saldo, EUserType tipo)
         {
-            Id = id;
+          
             Nome = nome;
             Email = email;
             Senha = senha;
@@ -19,7 +19,7 @@ namespace BankingApp.Domain.Entities
             Tipo = tipo;
         }
 
-        public int Id { get; private set; }
+        //public int Id { get; private set; }
         public Name Nome { get; private set; }
         public Email Email { get; private set; }
         public string Senha { get; private set; }

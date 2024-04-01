@@ -5,9 +5,12 @@ namespace BankingApp.Domain.Repositories
 {
     public interface IUserRepository
     {
-        bool CpfExist(string cpf);
-        bool EmailExist(string email);
-        void CreateUser(User user);
+        void OpenConnection();
+        void CloseConnection();
+        bool AtualizarUsuario(CPF cpf, decimal valor);
+        bool EmailjaExiste(string email);
+        bool CPFjaExiste(string cpf);
+        void CriarUsuario(User user);
         
     }
 }

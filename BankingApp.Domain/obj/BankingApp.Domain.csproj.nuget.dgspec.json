@@ -45,6 +45,10 @@
             "Flunt": {
               "target": "Package",
               "version": "[2.0.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
             }
           },
           "imports": [

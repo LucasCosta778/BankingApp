@@ -15,8 +15,6 @@ namespace BankingApp.Domain.Entities
             ValorTransferencia = valorTransferencia;
             DataTransferencia = DateTime.Now;
 
-            Remetente.Saldo -= valorTransferencia;
-            Destinatario.Saldo += valorTransferencia;
         }
 
         public string Numero { get; private set; }
