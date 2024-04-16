@@ -15,7 +15,7 @@ namespace BankingApp.Domain.UseCases
       _userRepository = repository;
     }
 
-    private void CriarUsuario(
+    private void CreateUser(
     string primeiroNome,
     string ultimoNome,
     string senha,
@@ -31,18 +31,18 @@ namespace BankingApp.Domain.UseCases
       var Cpf = new CPF(cpf);
 
       //Verificar se cpf já está cadastrado
-      if (_userRepository.CPFjaExiste(cpf)) 
+      if (_userRepository.CPFExist(cpf)) 
         throw new Exception("CPF já existe!");
 
       //Verificar se email já está cadastrado
-      if (_userRepository.EmailjaExiste(email)) 
+      if (_userRepository.EmailExist(email)) 
         throw new Exception("Email já existe!");
 
       //Gerar entidade
       var user = new User(name, Email, senha, Cpf, saldo, tipo);
 
       //Salvar usuário
-      _userRepository.CriarUsuario(user);
+      _userRepository.CreateUser(user);
 
     }
 

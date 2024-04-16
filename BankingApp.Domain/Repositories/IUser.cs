@@ -7,10 +7,10 @@ namespace BankingApp.Domain.Repositories
     {
         void OpenConnection();
         void CloseConnection();
-        bool AtualizarUsuario(CPF cpf, decimal valor);
-        bool EmailjaExiste(string email);
-        bool CPFjaExiste(string cpf);
-        void CriarUsuario(User user);
+        bool UpdateUser(CPF cpf, decimal valor);
+        bool EmailExist(string email);
+        bool CPFExist(string cpf);
+        void CreateUser(User user);
         
     }
 }

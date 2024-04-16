@@ -14,10 +14,10 @@ namespace BankingApp.Domain.UseCases
       _userRepository = userRepository;
     }
 
-    public void CriarTransferencia(User Remetente, User Destinatario, decimal valorTransferencia)
+    public void CreateTransfer(User Remetente, User Destinatario, decimal valorTransferencia)
     {
       //Chamar método para validar a transferência
-      ValidarTransferencia(Remetente, Destinatario, valorTransferencia);
+      TransferIsValid(Remetente, Destinatario, valorTransferencia);
       //Gerar entidade
       var transferencia = new Transfer(Remetente, Destinatario, valorTransferencia);
       //Atualizar saldo dos usuários
@@ -25,15 +25,15 @@ namespace BankingApp.Domain.UseCases
       Destinatario.Saldo += valorTransferencia;
 
       //Salvar transferência no banco
-      _transferRepository.CriarTransferencia(transferencia);
+      _transferRepository.CreateTransfer(transferencia);
 
       //Atualizar usuários
-      _userRepository.AtualizarUsuario(Remetente.Cpf, Remetente.Saldo);
-      _userRepository.AtualizarUsuario(Destinatario.Cpf, Destinatario.Saldo);
+      _userRepository.UpdateUser(Remetente.Cpf, Remetente.Saldo);
+      _userRepository.UpdateUser(Destinatario.Cpf, Destinatario.Saldo);
 
     }
 
-    public void ValidarTransferencia(User Remetente, User Destinatario, decimal valorTransferencia)
+    public void TransferIsValid(User Remetente, User Destinatario, decimal valorTransferencia)
     {
       if (Remetente == null || Destinatario == null)
       {

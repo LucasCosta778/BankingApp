@@ -18,8 +18,8 @@ namespace BankingApp.Domain.ValueObjects
 
         public string Address { get; private set; }
 
-      private bool IsValidEmail(string email)
-         {
+        private bool IsValidEmail(string email)
+        {
              // Expressão regular para validar o formato do endereço de e-mail
             string emailRegex = @"^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$";
             Regex regex = new Regex(emailRegex);

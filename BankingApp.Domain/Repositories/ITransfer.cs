@@ -8,9 +8,9 @@ namespace BankingApp.Domain.Repositories
     {
         void OpenConnection();
         void CloseConnection();
-        bool CPFjaExiste(User remetente);
-        bool DestinatarioExiste(User destinatario);
-        void CriarTransferencia(Transfer transfer);
+        bool SenderExist(User remetente);
+        bool RecipientExist(User destinatario);
+        void CreateTransfer(Transfer transfer);
 
     }
 }

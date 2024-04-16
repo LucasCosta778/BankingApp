@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "U9mtxwQPSzum3uXq3jJuW/2B16HQcV8H86TK2h/SKyjUZcRhBHw8rJGuSxSt77piBCRUzaKN41VvgYNs5l77Yg==",
+  "dgSpecHash": "H2E4LZQgB/e5U7JnN40cZlr5H95dSZuGfZZ+ywk0WgqrSzREr5zrqVVC/Tubn8EIsGUvuxHFNdF2uJtPbCQXAQ==",
   "success": true,
-  "projectFilePath": "C:\\BankingApp\\BankingApp.Shared\\BankingApp.Shared.csproj",
+  "projectFilePath": "C:\\SimpleBankingProject\\BankingApp\\BankingApp.Shared\\BankingApp.Shared.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lucas\\.nuget\\packages\\flunt\\2.0.0\\flunt.2.0.0.nupkg.sha512"
+    "C:\\Users\\dev4lions1\\.nuget\\packages\\flunt\\2.0.0\\flunt.2.0.0.nupkg.sha512"
   ],
   "logs": []
 }
